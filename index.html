@@ -9,7 +9,19 @@
     <script defer="defer" src="/devextreme-vue-template/js/app.f7f947cc.js"></script>
     <link href="/devextreme-vue-template/css/app.30564796.css" rel="stylesheet">
   </head>
-  <body class="dx-viewport">
+  <body class="dx-viewport" style="display: none;">
+    <div id="myBanner">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+    
+    <script text="text/javascript">
+      window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+  document.quertySelector("#myBanner").style.display = 'block';
+});
+    </script>
         <div>Some text 1</div>
     <div>Some text 1</div>
     <div>Some text 1</div>
