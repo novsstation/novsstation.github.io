@@ -10,7 +10,7 @@
     <link href="/devextreme-vue-template/css/app.30564796.css" rel="stylesheet">
   </head>
   <body class="dx-viewport">
-    <div id="myBanner"  style="display: none;">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+    <div id="myBanner"  style="display: none;">Некий кастомный стандартный баннер, переопределенный на событии beforeinstallprompt</div>
     
     <script text="text/javascript">
       window.addEventListener('beforeinstallprompt', (e) => {
@@ -19,7 +19,7 @@
 //         // Stash the event so it can be triggered later.
 //         deferredPrompt = e;
 //         // Update UI notify the user they can add to home screen
-//         document.querySelector("#myBanner").style.display = 'block';
+         document.querySelector("#myBanner").style.display = 'block';
       });
     </script>
         <div>Some text 1</div>
